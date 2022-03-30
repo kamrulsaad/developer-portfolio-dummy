@@ -1,9 +1,9 @@
 import './App.scss'
 import Home from './Components/Home/Home'
-// import About from './components/About'
 // import Contact from './components/Contact'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
+import About from './Components/About/About'
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout></Layout>}>
           <Route index element={<Home />} />
-          {/* <Route path="about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="about" element={<About />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
         </Route>
       </Routes>
     </>
